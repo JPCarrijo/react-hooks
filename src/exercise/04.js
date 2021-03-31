@@ -88,7 +88,8 @@ function Board() {
             </div>
             <button className="restart" onClick={restart}>
                 restart
-      </button>
+            </button>
+            <p>{JSON.stringify(squares)}</p>
         </div>
     )
 }
@@ -97,7 +98,7 @@ function Game() {
     return (
         <div className="game">
             <div className="game-board">
-                <Board />
+                <Board/>
             </div>
         </div>
     )
